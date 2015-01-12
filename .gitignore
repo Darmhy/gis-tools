@@ -1,0 +1,8 @@
+data/*
+*.pyc
+*~
+*.aux
+*.bbl
+*.blg
+*.log
+.ropeproject
