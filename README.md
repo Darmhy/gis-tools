@@ -2,7 +2,8 @@ gis-tools
 ===================
 
 Some Python code to take a path (a sequence of latitude/longitude points),
- and compute the distance between points along the path.
+ and compute the distance between points along the path. At the moment,
+ this code will only work well for paths that lie within small regions (cities) that are within a UTM zone. See source for more details.
 
 Install
 =======
