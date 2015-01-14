@@ -34,3 +34,11 @@ class TestPath(unittest.TestCase):
         #should be 4.46 / 7.44 = 0.60
         pos = self.geo_path.get_norm_pos(self.path[1])
         self.assertTrue(abs(pos - 0.6) < 0.02)
+
+    def test_get_dist_to_path(self):
+        p0 = self.path[0]
+        d = self.geo_path.get_dist_to_path(p0)
+        self.assertTrue(abs(d - 0.0) < 0.00001)
+
+        #TODO test a point 1 km from the start
+        

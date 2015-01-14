@@ -68,8 +68,19 @@ class GeoPath(object):
         d = self.get_dist(self.start, c)
         return d / self.get_len()
 
+    def get_dist_to_path(self, c):
+        """Return the shortest distance to the path in km."""
+
+        c = Point(*self.to_utm(c))
+        #closest = self.utm_path.interpolate(self.utm_path.project(Point(*self.to_utm(c))))
+        return self.utm_path.distance(c) / 1000.0
+    
 def exp():
-    """An experiment to compute the relative error."""
+    """An experiment to compute the relative error.
+
+    Arguments:
+    c -- a coordinate represented as a (lat, lon) tuple
+    """
     
     #olney transportation center
     p1 = (40.040042, -75.144772)

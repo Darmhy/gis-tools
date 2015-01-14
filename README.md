@@ -21,6 +21,6 @@ Usage
 =======
 To run the test cases, invoke
 ```
-python -m unittest lewfish.test_geopath
+python -m unittest lewfish.gistools.test_geopath
 ```
 See lewfish/test_geopath.py for usage examples.
